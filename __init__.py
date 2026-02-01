@@ -108,7 +108,7 @@ def addFurigana(editor):
 
 def setupEditorButtonsFilter(buttons, editor):
     key = QKeySequence(gc('Key_insert_furigana'))
-    keyStr = key.toString(QKeySequence.NativeText)
+    keyStr = key.toString(QKeySequence.SequenceFormat.NativeText)
     if gc('Key_insert_furigana'):
         b = editor.addButton(
             os.path.join(os.path.dirname(__file__), "icons", "furigana.png"),
